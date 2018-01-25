@@ -1,0 +1,37 @@
+@import url(../js/Cesium/Widgets/widgets.css);
+
+.cesium-viewer {
+    width: 100%;
+    height: 100%;
+}
+
+.cesium-viewer-cesiumWidgetContainer {
+    width: 100%;
+    height: 100%;
+}
+
+.cesium-widget,
+.cesium-widget canvas {
+    width: 100%;
+    height: 100%;
+}
+
+.cesium-viewer .cesium-widget-credits {
+    display: none !important;
+}
+
+.cesium-viewer-animationContainer {
+    left: 305px;
+    bottom: 30px;
+}
+
+.cesium-viewer-timelineContainer {
+    right: 0px;
+    bottom: 30px;
+    visibility: hidden;
+}
+
+.cesium-viewer-toolbar {
+    top: 85px;
+    right: 40px;
+}

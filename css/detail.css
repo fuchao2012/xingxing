@@ -1,0 +1,253 @@
+.detailPanel {
+    width: 365px;
+    height: calc(100% - 110px);
+    position: absolute;
+    top: 80px;
+    right: -365px;
+    background: rgba(27, 33, 35, 0.9);
+    border-right: 1px solid #666;
+    border-left: 1px solid #666;
+    color: #FFF;
+}
+
+.detailPanel .header {
+    height: 70px;
+    padding: 0 10px 0 10px;
+}
+
+.detailPanel .logo {
+    width: 51px;
+    height: 53px;
+    background: url('../images/detailHeader-icon.png') no-repeat;
+    margin-top: 12px;
+    text-align: center;
+}
+
+.detailPanel .logo .helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.detailPanel .logo img {
+    margin: -1px 0 0 -1px;
+}
+
+.detailPanel .description {
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.detailPanel .detailLink {
+    margin-top: 20px;
+    width: 75px;
+    height: 30px;
+    line-height: 28px;
+    text-align: center;
+    border-top: 1px solid #73c1ce;
+    border-right: 1px solid #12465e;
+    border-bottom: 1px solid #0c3e57;
+    border-left: 1px solid #5e96b1;
+    margin-left: 5px;
+    cursor: pointer;
+    background: #216a8d;
+    background: -webkit-gradient(linear, 0 top, 0 bottom, from(#2b769d), to(#125476));
+    background: -moz-linear-gradient(top, #2b769d, #125476);
+    background: -o-linear-gradient(top, #2b769d, #125476);
+    /*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#2b769d, endColorstr=#125476, GradientType=0);*/
+}
+
+.detailPanel .detailLink:hover {
+    background: #3180a8;
+}
+
+.scroll-viewer {
+    height: calc(100% - 85px);
+    padding: 10px 5px 10px 0;
+    overflow-y: auto;
+}
+
+.detailPanel .image-border {
+    width: calc(100% - 10px);
+    height: 218px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #999;
+    position: relative;
+}
+
+#model3d-container {
+    height: 100%;
+    width: 100%;
+}
+
+#detail-image {
+    height: 100%;
+    width: 100%;
+}
+
+.detailPanel .switch-button-container {
+    width: 112px;
+    height: 29px;
+
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.detailPanel .switch-button {
+    width: 55px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    font-size: 14px;
+    margin: 0;
+    color: #fff;
+    cursor: pointer;
+    background: url("../images/switch-button-blue.png");
+}
+
+.detailPanel .switch-button.select {
+    color: #333;
+    background: url("../images/switch-button-yellow.png");
+}
+
+.detailPanel .switch-button:hover {
+    background: url("../images/switch-button-yellow.png");
+}
+
+.detailPanel .viewTopoButton {
+    width: 86px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    text-align: center;
+    background: url(../images/line-bule.png);
+    cursor: pointer;
+    margin-right: 10px;
+    margin-top: 8px;
+}
+
+.detailPanel .viewTopoButton:hover {
+    background: url("../images/line-yellow.png");
+}
+
+.detailPanel .property-header {
+    height: 46px;
+    line-height: 46px;
+    background: url('../images/property-header-background.png') center center repeat-x;
+    padding-left: 12px;
+    cursor: pointer;
+}
+
+.detailPanel .chart {
+    height: 190px;
+}
+
+.detailPanel .chart-content {
+    height: calc(100% - 46px);
+}
+
+.list .list-item {
+    height: 30px;
+    line-height: 30px;
+    color: #e1e1e1;
+}
+
+.list .list-item:nth-child(odd) {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.list .list-item:nth-child(even) {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.list a {
+    color: #00BFFF;
+    text-decoration-line: underline;
+}
+
+.list .list-item-text {
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.list .list-item-text.interactive {
+    color: #00BFFF;
+    text-decoration-line: underline;
+}
+
+.detailPanel span {
+    font-size: 14px;
+}
+
+.detailPanel table {
+    width: 100%;
+    -webkit-border-horizontal-spacing: 1px;
+    -webkit-border-vertical-spacing: 1px;
+}
+
+.detailPanel table thead {
+    height: 35px;
+    line-height: 35px;
+    background-color: transparent;
+}
+
+.detailPanel table tr {
+    height: 30px;
+    line-height: 30px;
+}
+
+.detailPanel table tbody tr:nth-child(odd) {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.detailPanel table tbody tr:nth-child(even) {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.detailPanel table th {
+    padding-left: 20px;
+    font-size: 14px;
+    color: #e1e1e1;
+}
+
+.detailPanel table td {
+    padding-left: 20px;
+    font-size: 14px;
+    color: #e1e1e1;
+}
+
+.detailPanel table td.interactive {
+    cursor: pointer;
+    color: #00BFFF;
+    text-decoration-line: underline;
+}
+
+.detailPanelControl {
+    position: absolute;
+    left: -20px;
+    width: 20px;
+    height: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 1px solid #666;
+    background: rgba(0, 0, 0, 0.6) url(../images/left.png) center center no-repeat;
+    cursor: pointer;
+}
+
+.detailPanel .k-treeview{
+    padding-left: 4px;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.detailPanel .k-treeview .list-item-text{
+    margin-left: 0px;
+    font-size: 14px;
+    color: #e1e1e1;
+}
+
+.detailPanel .k-treeview .list-item-text.interactive{
+    color: #00BFFF;
+    text-decoration-line: underline;
+}

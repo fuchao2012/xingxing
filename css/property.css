@@ -1,0 +1,396 @@
+.propertyPanel {
+    position: absolute;
+    top: 80px;
+    left: 100%;
+    width: 100%;
+    height: calc(100% - 110px);
+    background: url(../images/bg.png) center center repeat;
+    color: #FFF;
+    font-size: 14px;
+}
+
+.propertyPanel-header {
+    position: relative;
+    height: 68px;
+    padding-left: 20px;
+}
+
+.propertyPanel-header .back {
+    position: relative;
+    width: 44px;
+    height: 44px;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-right: 10px;
+    background: url(../images/back.png) center center no-repeat;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.propertyPanel-header .back:hover {
+    opacity: 1;
+}
+
+.propertyPanel-header .image {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 51px;
+    height: 53px;
+    background: url(../images/detailHeader-icon.png) no-repeat;
+    text-align: center;
+}
+
+.propertyPanel-header .image > img {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.propertyPanel-header .description {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 10px;
+}
+
+.propertyPanel-header .title {
+    font-size: 19px;
+}
+
+.propertyPanel-content {
+    padding: 0 15px 10px 15px;
+    height: calc(100% - 68px);
+}
+
+.propertyPanel-imageText {
+    position: relative;
+    float: left;
+    width: 49.5%;
+    height: 100%;
+
+}
+
+.propertyPanel-imageText .image {
+    position: relative;
+    height: 100%;
+    padding: 5px;
+    border: 1px solid rgba(71, 133, 148, 0.8);
+}
+
+#model3d-container-detail {
+    width: 100%;
+    height: 100%;
+}
+
+#detail-image-detail {
+    width: 100%;
+    height: 100%;
+}
+
+.propertyPanel-imageText .switch-button-container {
+    width: 112px;
+    height: 29px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.propertyPanel-imageText .switch-button {
+    width: 55px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    font-size: 14px;
+    margin: 0;
+    color: #fff;
+    cursor: pointer;
+    background: url("../images/switch-button-blue.png") center center repeat-x;
+}
+
+.propertyPanel-imageText .switch-button.select {
+    color: #333;
+    background: url("../images/switch-button-yellow.png") center center repeat-x;
+}
+
+.propertyPanel-imageText .switch-button:hover {
+    background: url("../images/switch-button-yellow.png") center center repeat-x;
+}
+
+.propertyPanel-imageText .text {
+    position: absolute;
+    height: 200px;
+    bottom: 0;
+    background: rgba(25, 26, 26, 0.65);
+    padding: 10px;
+}
+
+.propertyPanel .multi-text-header {
+    height: 30px;
+    font-family: "幼圆";
+    font-size: 30px;
+}
+
+.propertyPanel .multi-header {
+    height: 28px;
+    line-height: 28px;
+    font-size: 30px;
+    font-family: "幼圆";
+}
+
+.propertyPanel .text-header {
+    height: 30px;
+    border-bottom: 5px solid rgba(0, 0, 0, 0.3);
+}
+
+.propertyPanel .tip {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+    width: 7px;
+    height: 18px;
+    background: #D2171E;
+    margin-right: 5px;
+}
+
+.propertyPanel .header {
+    height: 28px;
+    line-height: 28px;
+    font-size: 18px;
+    font-family: "幼圆";
+}
+
+.propertyPanel .splitLine {
+    position: absolute;
+    width: calc(100% - 160px);
+    height: 1px;
+    top: 30px;
+    margin-left: 10px;
+    background: url(../images/dotline.png) center center repeat-x;
+}
+
+.propertyPanel .text-content {
+    height: calc(100% - 30px);
+    text-indent: 2em;
+    letter-spacing: 1px;
+    font-size: 14px;
+    line-height: 25px;
+    color: #e4e4e4;
+    padding: 5px 10px;
+    overflow-y: auto;
+    font-weight: lighter;
+}
+
+.propertyPanel-charts {
+    float: left;
+    height: 100%;
+    width: 24.5%;
+    margin-left: 0.5%;
+}
+
+.propertyPanel-charts .topoContainer {
+    width: 100%;
+    height: 40px;
+    background: rgba(25, 26, 26, 0.65);
+    border: 1px solid rgba(71, 133, 148, 0.8);
+}
+
+.propertyPanel-charts .topoContainer .header {
+    height: 40px;
+    line-height: 38px;
+}
+
+.propertyPanel-charts .viewTopoButton {
+    width: 86px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    text-align: center;
+    background: url(../images/line-bule.png) center center repeat-x;
+    cursor: pointer;
+    margin-right: 10px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    border-top: 1px solid #6bb0d1;
+}
+
+.propertyPanel-charts .viewTopoButton:hover {
+    background: url("../images/line-yellow.png") center center repeat-x;
+    border-top: 0;
+}
+
+.propertyPanel-charts .chartContainer {
+    position: relative;
+    width: 100%;
+    height: calc(99% - 40px);
+    top: 1%;
+}
+
+.propertyPanel .max {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 18px;
+    height: 18px;
+    background: #7d9db5 url(../images/max.png) center center no-repeat;
+    cursor: pointer;
+}
+
+.propertyPanel .max:hover {
+    background-color: #aacae2;
+}
+
+.propertyPanel .min {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 18px;
+    height: 18px;
+    background: #7d9db5 url(../images/min.png) center center no-repeat;
+    cursor: pointer;
+}
+
+.propertyPanel.min:hover {
+    cursor: pointer;
+}
+
+.propertyPanel .chart-content {
+    width: 100%;
+    height: calc(100% - 30px);
+}
+
+.propertyPanel .chartPanel {
+    position: relative;
+    height: calc(98% / 3);
+    width: 100%;
+    background: rgba(25, 26, 26, 0.65);
+    border: 1px solid rgba(71, 133, 148, 0.8);
+}
+
+.propertyPanel-charts .chartPanel:nth-child(1) {
+    top: 0%;
+}
+
+.propertyPanel-charts .chartPanel:nth-child(2) {
+    top: 1%;
+}
+
+.propertyPanel-charts .chartPanel:nth-child(3) {
+    top: 2%;
+}
+
+.propertyPanel .chart {
+    height: 100%;
+}
+
+.propertyPanel-detail {
+    float: left;
+    height: 100%;
+    width: 25%;
+    margin-left: 0.5%;
+    background: rgba(25, 26, 26, 0.65);
+    border: 1px solid rgba(71, 133, 148, 0.8);
+}
+
+.propertyPanel-detail .detail-content {
+    overflow-y: auto;
+    height: calc(100% - 30px);
+}
+
+.propertyPanel .property-header {
+    height: 46px;
+    line-height: 46px;
+    background: url('../images/property-header-background.png') center center repeat-x;
+    padding-left: 12px;
+    cursor: pointer;
+}
+
+.propertyPanel .list .list-item {
+    height: 30px;
+    line-height: 30px;
+    color: #e1e1e1;
+}
+
+.propertyPanel .list .list-item:nth-child(odd) {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.propertyPanel .list .list-item:nth-child(even) {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.propertyPanel .list .list-item-text {
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.propertyPanel .list a {
+    color: #00BFFF;
+    text-decoration-line: underline;
+}
+
+.propertyPanel table {
+    width: 100%;
+    -webkit-border-horizontal-spacing: 1px;
+    -webkit-border-vertical-spacing: 1px;
+}
+
+.propertyPanel table thead {
+    height: 35px;
+    line-height: 35px;
+    background-color: transparent;
+}
+
+.propertyPanel table tr {
+    height: 30px;
+    line-height: 30px;
+}
+
+.propertyPanel table tbody tr:nth-child(odd) {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.propertyPanel table tbody tr:nth-child(even) {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.propertyPanel table th {
+    padding-left: 20px;
+    font-size: 14px;
+    color: #e1e1e1;
+}
+
+.propertyPanel table td {
+    padding-left: 20px;
+    font-size: 14px;
+    color: #e1e1e1;
+}
+
+.propertyPanel .k-treeview {
+    padding-left: 4px;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.propertyPanel .k-treeview .list-item-text {
+    margin-left: 0px;
+    font-size: 14px;
+    color: #e1e1e1;
+}
+
+.propertyPanel .k-treeview .list-item-text.interactive {
+    color: #00BFFF;
+    text-decoration-line: underline;
+}
+
+.propertyPanel-maxContainer {
+    position: absolute;
+    height: calc(100% - 68px);
+    width: 100%;
+    top: 68px;
+    padding: 0 15px;
+}
+
+.propertyPanel-maxContainer .chart {
+}

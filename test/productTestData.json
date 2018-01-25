@@ -1,0 +1,339 @@
+[
+  {
+    "category": "航空",
+    "area": [
+      {
+        "category": "战斗机",
+        "countries": [
+          {
+            "name": "美国",
+            "models": [
+              {
+                "id": 1,
+                "name": "F-22猛禽"
+              },
+              {
+                "id": 2,
+                "name": "F-35闪电2"
+              }
+            ]
+          },
+          {
+            "name": "俄罗斯",
+            "models": [
+              {
+                "id": 3,
+                "name": "苏-57"
+              },
+              {
+                "id": 4,
+                "name": "LMFS"
+              }
+            ]
+          },
+          {
+            "name": "中国",
+            "models": [
+              {
+                "id": 5,
+                "name": "歼-20"
+              },
+              {
+                "id": 6,
+                "name": "歼-31鹘鹰"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "轰炸机",
+        "countries": [
+          {
+            "name": "美国",
+            "models": [
+              {
+                "id": 1,
+                "name": "B-47"
+              },
+              {
+                "id": 2,
+                "name": "B-52"
+              }
+            ]
+          },
+          {
+            "name": "俄罗斯",
+            "models": [
+              {
+                "id": 3,
+                "name": "Tu-160"
+              },
+              {
+                "id": 4,
+                "name": "Tu-22M"
+              }
+            ]
+          },
+          {
+            "name": "中国",
+            "models": [
+              {
+                "id": 5,
+                "name": "图-4"
+              },
+              {
+                "id": 6,
+                "name": "轰-6"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "航天",
+    "area": [
+      {
+        "category": "弹道导弹",
+        "countries": [
+          {
+            "name": "美国",
+            "models": [
+              {
+                "id": 1,
+                "name": "Trident"
+              },
+              {
+                "id": 2,
+                "name": "Poseidon"
+              }
+            ]
+          },
+          {
+            "name": "俄罗斯",
+            "models": [
+              {
+                "id": 3,
+                "name": "RS-24"
+              },
+              {
+                "id": 4,
+                "name": "白杨-M"
+              }
+            ]
+          },
+          {
+            "name": "中国",
+            "models": [
+              {
+                "id": 5,
+                "name": "东风-41"
+              },
+              {
+                "id": 6,
+                "name": "巨浪2型"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "运载火箭",
+        "countries": [
+          {
+            "name": "美国",
+            "models": [
+              {
+                "id": 1,
+                "name": "土星5号"
+              },
+              {
+                "id": 2,
+                "name": "战神5号"
+              }
+            ]
+          },
+          {
+            "name": "俄罗斯",
+            "models": [
+              {
+                "id": 3,
+                "name": "安加拉号"
+              },
+              {
+                "id": 4,
+                "name": "联盟2号"
+              }
+            ]
+          },
+          {
+            "name": "中国",
+            "models": [
+              {
+                "id": 5,
+                "name": "长征五号"
+              },
+              {
+                "id": 6,
+                "name": "长征十一号"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "航海",
+    "area": [
+      {
+        "category": "航空母舰",
+        "countries": [
+          {
+            "name": "美国",
+            "models": [
+              {
+                "id": 1,
+                "name": "尼米兹号"
+              },
+              {
+                "id": 2,
+                "name": "福特号"
+              }
+            ]
+          },
+          {
+            "name": "英国",
+            "models": [
+              {
+                "id": 3,
+                "name": "伊丽莎白号"
+              },
+              {
+                "id": 4,
+                "name": "威尔士亲王号"
+              }
+            ]
+          },
+          {
+            "name": "中国",
+            "models": [
+              {
+                "id": 5,
+                "name": "辽宁号"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "潜艇",
+        "countries": [
+          {
+            "name": "美国",
+            "models": [
+              {
+                "id": 1,
+                "name": "海狼级"
+              },
+              {
+                "id": 2,
+                "name": "弗吉尼亚级"
+              }
+            ]
+          },
+          {
+            "name": "俄罗斯",
+            "models": [
+              {
+                "id": 3,
+                "name": "北风之神"
+              },
+              {
+                "id": 4,
+                "name": "亚森级"
+              }
+            ]
+          },
+          {
+            "name": "中国",
+            "models": [
+              {
+                "id": 5,
+                "name": "远征41号"
+              },
+              {
+                "id": 6,
+                "name": "长城201号"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "陆战",
+    "area": [
+      {
+        "category": "坦克",
+        "countries": [
+          {
+            "name": "美国",
+            "models": [
+              {
+                "id": 1,
+                "name": "M1A2"
+              }
+            ]
+          },
+          {
+            "name": "俄罗斯",
+            "models": [
+              {
+                "id": 3,
+                "name": "T-72BM"
+              },
+              {
+                "id": 4,
+                "name": "T-90"
+              },
+              {
+                "id": 5,
+                "name": "T-14"
+              }
+            ]
+          },
+          {
+            "name": "德国",
+            "models": [
+              {
+                "id": 3,
+                "name": "豹2A5"
+              },
+              {
+                "id": 4,
+                "name": "豹2A6"
+              }
+            ]
+          },
+          {
+            "name": "中国",
+            "models": [
+              {
+                "id": 5,
+                "name": "96G式"
+              },
+              {
+                "id": 6,
+                "name": "99A式"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

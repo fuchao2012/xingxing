@@ -1,0 +1,23 @@
+.manage-searchList-content.ng-enter,
+.manage-searchList-content.ng-leave,
+.manage-searchList-content.ng-move {
+    overflow: hidden;
+    transition: 0.5s linear all;
+}
+
+.manage-searchList-content.ng-enter,
+.manage-searchList-content.ng-leave.ng-leave-active,
+.manage-searchList-content.ng-move {
+    height: 0;
+    margin-bottom: 0;
+    opacity: 0;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+.manage-searchList-content.ng-enter.ng-enter-active,
+.manage-searchList-content.ng-leave,
+.manage-searchList-content.ng-move.ng-move-active {
+    height: 220px;
+    opacity: 1;
+}

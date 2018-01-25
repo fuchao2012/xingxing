@@ -1,0 +1,172 @@
+
+#businessPresentationBlock {
+    height: 100%;
+    padding-top: 15px;
+}
+
+.imageButton {
+    width: 90px;
+    height: 34px;
+    line-height: 28px;
+    text-align: center;
+    font-size: 14px;
+    background: url(../images/business-blue.png) center center repeat-x;
+    cursor: pointer;
+    margin-right: 2px;
+}
+
+.imageButton:first-of-type {
+    margin-left: 10px;
+}
+
+.imageButton.select {
+    background: url(../images/business-yellow.png) center center repeat-x;
+}
+
+.imageButton:hover {
+    background: url(../images/business-yellow.png) center center repeat-x;
+}
+
+#treeViewPanel {
+    height: calc(100% - 45px);
+    position: relative;
+    margin: 5px 0 5px 10px;
+}
+
+/*.k-treeview ul>li{*/
+/*padding: 0;*/
+/*}*/
+
+/*.k-treeview ul>li>.k-top{*/
+/*margin-left: 16px;*/
+/*}*/
+
+/*#treeViewPanel>ul>li>.k-top>.k-icon{*/
+/*float: right;*/
+/*}*/
+
+/*#treeViewPanel>ul>li>.k-top>.k-in{*/
+/*margin-left: 10px;*/
+/*font-size: 20px;*/
+/*}*/
+
+/* tree折叠箭头 */
+.k-treeview .k-icon, .k-scheduler-table .k-icon, .k-grid .k-hierarchy-cell .k-icon {
+    background-color: transparent;
+    width: 12px;
+    height: 12px;
+    border-radius: 0;
+    margin-right: 5px;
+    background-size: cover;
+    background-position: center;
+}
+
+.k-treeview .k-checkbox {
+    margin-top: 0px;
+}
+
+.k-i-expand, .k-plus, .k-plus-disabled {
+    background-image: url('../images/treeitem-collapse.png');
+}
+
+.k-i-collapse, .k-minus, .k-minus-disabled {
+    background-image: url('../images/treeitem-expand.png');
+}
+
+/* checkbox webkit 样式 */
+.k-checkbox input[type=checkbox] {
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0;
+    cursor: pointer;
+    width: 13px;
+    height: 13px;
+    vertical-align: bottom;
+    background: transparent;
+    border: 1px solid #999;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    border-radius: 0px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.k-checkbox input[type=checkbox]:checked::after {
+    align-content: center;
+    content: url('../images/treeview-checked.png');
+}
+
+.k-checkbox input[type=checkbox]:indeterminate {
+    align-content: center;
+    content: url('../images/indeterminate.png');
+}
+
+.k-checkbox input[type=checkbox]:focus {
+    outline: none;
+    border-color: white;
+}
+
+.k-treeview .k-plus, .k-treeview .k-minus, .k-treeview .k-plus-disabled, .k-treeview .k-minus-disabled {
+    /*margin-top: .25em;
+    margin-left: -16px;*/
+    cursor: pointer;
+}
+
+.k-treeview span.k-in {
+    color: #fff;
+    width: calc(100% - 20px);
+}
+
+.k-treeview span.k-in:hover {
+    color: #fff;
+    background: #64C0DF;
+}
+
+.k-state-focused.k-state-selected {
+    box-shadow: inset 0 0 0 0px #ff9900;
+}
+
+.k-treeview .k-state-selected {
+    color: #fff;
+    background-color: #ff9900;
+}
+
+/* 滚动条样式 */
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    cursor: hand;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    background: rgba(204, 204, 204, 0.8);
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+    background: rgba(153, 153, 153, 0.4);
+}
+
+::-webkit-scrollbar-corner {
+    display: none;
+}
+
+/* IE 滚动条样式--不能更改透明度--Fiorfox不能改滚动条!_! */
+html, body {
+    scrollbar-face-color: #333333; /*滚动条3D表面（ThreedFace）的颜色*/
+    scrollbar-arrow-color: #333333; /*滚动条方向箭头的颜色 */
+    scrollbar-track-color: #111111; /*滚动条的拖动区域(TrackBar)颜色*/
+    scrollbar-darkshadow-color: red; /*滚动条暗边框（ThreedDarkShadow）颜色*/
+}

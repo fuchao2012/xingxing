@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>科技资源大数据展示系统</title>
+    <link href="css/index.css" rel="stylesheet">
+    <script data-main='app/main' src="js/require/require.min.js"></script>
+</head>
+<body id="body">
+<header ng-controller="headerController">
+    <div class="header-background">
+        <div class="content">
+            <img class="logo left" src="images/logo.png"/>
+
+            <div class="appNameContainer left">
+                <div class="appName"></div>
+            </div>
+
+            <div class="separator left"></div>
+
+            <div class="datetime left">
+                <div class="time" ng-bind="time"></div>
+                <span class="date" ng-bind="date"></span>
+                <span class="date" ng-bind="week"></span>
+            </div>
+
+            <div class="fullScreenButton right" ng-click="toggleFullScreen()">
+                <div class="fullScreenIcon" ng-class="{true: 'fullscreen', false: 'exitFullscreen'}[isFullscreen]"></div>
+            </div>
+
+            <div class="userContainer right">
+                <div>
+                    <img class="userIcon" src="images/user-icon.png"/>
+                    <span class="user" ng-bind="user"></span>
+                </div>
+                <div class="role right" ng-bind="role"></div>
+            </div>
+        </div>
+    </div>
+</header>
+<map-panel class="mapPanel"></map-panel>
+<manage-panel class="managePanel"></manage-panel>
+<!--<statistics-panel class="statisticsPanel"></statistics-panel>-->
+<detail-panel class="detailPanel"></detail-panel>
+<line-panel class="linePanel"></line-panel>
+<property-panel class="propertyPanel"></property-panel>
+<footer>
+    <span class="left" style="margin-left: 15px;">操作提示信息</span>
+    <span class="right" style="margin-right: 15px;">系统版本信息</span>
+</footer>
+</body>
+</html>

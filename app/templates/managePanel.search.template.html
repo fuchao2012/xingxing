@@ -1,0 +1,114 @@
+<div class="manage-searchField">
+    <span class="key">关键词</span>
+    <div class="clearfix">
+        <div class="searchInputContainer left">
+            <input class="searchInput" ng-model="$ctrl.searchText">
+        </div>
+        <span class="searchHandle left" ng-click="$ctrl.searchHandle()">搜索</span>
+    </div>
+    <div class="checkContainer clearfix">
+        <div class="checkBox" check-box checked="$ctrl.allChecked" ng-click="$ctrl.allCheckedHandle()">全部</div>
+        <div class="checkBox" check-box ng-repeat="data in $ctrl.checks" checked="data.checked"
+             ng-click="$ctrl.checkItemHandle(data)">{{data.name}}
+        </div>
+    </div>
+    <div class="searchDetail" ng-show="$ctrl.showDetail">
+        <ul>
+            <li class="item clearfix">
+                <span class="header left">国家：</span>
+                <div class="select left" select-list content="$ctrl.countryCheck.checkContent">
+                    <ul class="continentSelect">
+                        <li class="continentItem clearfix">
+                            <div class="checkBox" check-box ng-click="$ctrl.continentAllCheckHandle($event)"
+                                 checked="$ctrl.countryCheck.allCheck">全部国家
+                            </div>
+                        </li>
+                        <li class="continentItem clearfix" ng-repeat="data in $ctrl.countries">
+                            <div class="selectCheckBox left" check-box
+                                 ng-click="$ctrl.continentCheckHandle($event,data)"
+                                 checked="data.checked"></div>
+                            <div class="continent">
+                                <div class="clearfix">
+                                    <a class="selectOpen left"
+                                       ng-click="$ctrl.continentOpenHandle($event,data)"
+                                       ng-style="data.openStyle"
+                                    ></a>
+                                    <span class="text left" ng-click="$ctrl.continentOpenHandle($event,data)"
+                                          ng-bind="data.continent"></span>
+                                </div>
+                                <ul class="countrySelect" ng-show="data.opened">
+                                    <li class="countryItem" ng-repeat="country in data.countries">
+                                        <div class="selectCheckBox" check-box
+                                             ng-click="$ctrl.countryCheckHandle($event,data)" checked="country.checked">
+                                            {{country.name}}
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="item clearfix">
+                <span class="header left">领域：</span>
+                <div class="select left" select-list content="$ctrl.field" list="$ctrl.fields">
+                </div>
+            </li>
+            <li class="item clearfix">
+                <span class="header left">机构：</span>
+                <div class="select left" select-list content="$ctrl.organization" list="$ctrl.organizations">
+                </div>
+            </li>
+            <li class="item clearfix">
+                <span class="header left">类型：</span>
+                <div class="select left" select-list content="$ctrl.type" list="$ctrl.types">
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="searchControl">
+        <span ng-show="$ctrl.showDetail" ng-click="$ctrl.showDetail=!$ctrl.showDetail">收起</span>
+        <span ng-show="!$ctrl.showDetail" ng-click="$ctrl.showDetail=!$ctrl.showDetail">高级搜索</span>
+    </div>
+</div>
+<div class="searchListContainer">
+    <div class="manage-searchList">
+        <div class="manage-searchList-header" ng-click="$ctrl.searchListShow=!$ctrl.searchListShow">
+            搜索结果
+            <a tab-tip open="$ctrl.searchListShow"></a>
+        </div>
+        <div class="manage-searchList-content" ng-if="$ctrl.searchListShow">
+            <ul>
+                <li class="item clearfix" ng-repeat="data in $ctrl.searchList"
+                    ng-click="$ctrl.clickSearchItemHandle(data)">
+                    <a class="image left">
+                        <img ng-src="{{$ctrl.images[data.type]}}">
+                    </a>
+                    <span class="header">{{data.name}}</span>
+                    <span class="text">{{data.information}}</span>
+                    <!--<span class="text">关联机构：{{data.associatedOrganization}}</span>
+                    <span class="text">关联装备：{{data.associatedEquipment}}</span>
+                    <span class="text">关联技术：{{data.associatedTechnology}}</span>-->
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="manage-searchList">
+        <div class="manage-searchList-header" ng-click="$ctrl.searchHistoryListShow=!$ctrl.searchHistoryListShow">
+            搜素历史
+            <a tab-tip open="$ctrl.searchHistoryListShow"></a>
+        </div>
+        <div class="manage-searchList-content" ng-if="$ctrl.searchHistoryListShow">
+            <ul>
+                <li class="item clearfix" ng-repeat="data in $ctrl.searchHistortList"
+                    ng-click="$ctrl.clickSearchItemHandle(data)">
+                    <a class="image left">
+                        <img ng-src="{{$ctrl.images[data.type]}}">
+                    </a>
+                    <span class="header">{{data.name}}</span>
+                    <span class="text">{{data.information}}</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

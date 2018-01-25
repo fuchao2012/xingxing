@@ -1,0 +1,57 @@
+.statisticsPanel {
+    width: 615px;
+    height: 90px;
+    position: absolute;
+    top: 5px;
+    left: 360px;
+    color: #FFF;
+}
+
+.statistics-item {
+    width: 195px;
+    height: 90px;
+    background: rgba(26, 26, 26, 0.95);
+    border: 1px solid rgba(71, 133, 148, 1);
+    margin-right: 10px;
+}
+
+.statistics-item .header {
+    height: 30px;
+    border-bottom: 5px solid rgba(0, 0, 0, 0.3);
+}
+
+.statistics-item .tip {
+    display: block;
+    width: 7px;
+    height: 18px;
+    background: #D2171E;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
+.statistics-item .headerContent {
+    margin-top: 2px;
+}
+
+.statistics-item .content {
+    margin-top: 8px;
+}
+
+.statistics-item .image {
+    width: 40px;
+    height: 40px;
+    margin: 0px 10px 0 20px;
+}
+
+.statistics-item .text {
+    font-size: 40px;
+    font-family: 'DS-DIGIT';
+    color: #00BFFF;
+    max-width: 95px;
+}
+
+.statistics-item .unit {
+    margin: 16px 0 0 5px;
+    font-size: 15px;
+}
+

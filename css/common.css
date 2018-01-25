@@ -1,0 +1,77 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Agency FB';
+    src: url('../fonts/Agency FB.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'DS-DIGIT';
+    src: url('../fonts/DS-DIGIT.TTF') format('truetype');
+}
+
+[ng-cloak] {
+    visibility: hidden;
+    display: none !important;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    /*min-width: 1920px;*/
+    font-family: Microsoft YaHei;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    overflow: hidden; /*why*/
+}
+
+ul, ol {
+    list-style-type: none;
+}
+
+input, textarea, select {
+    outline: none;
+    font-family: Microsoft YaHei;
+}
+
+input, img, select {
+    vertical-align: middle;
+}
+
+a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+}
+
+.clearfix:before,
+.clearfix:after {
+    display: table;
+    content: " ";
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}

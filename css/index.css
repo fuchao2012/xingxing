@@ -1,0 +1,130 @@
+@import "kendo.common.min.css";
+@import "kendo.black.min.css";
+@import "common.css";
+@import "map.css";
+@import "manage.css";
+@import "statistics.css";
+@import "detail.css";
+@import "line.css";
+@import "cesium.css";
+@import "business.css";
+@import "search.css";
+@import "battleField.css";
+@import "property.css";
+
+body {
+    background: #000;
+    font-size: 14px;
+}
+
+header {
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    background: #000;
+    color: #FFF;
+    border-bottom: 1px solid #3A474F;
+    z-index: 1;
+}
+
+header .header-background {
+    height: 100%;
+    background-image: url("../images/header-background.png");
+    padding-top: 15px;
+}
+
+header .logo {
+    width: 47px;
+    height: 48px;
+    margin: 0 15px 0 15px;
+}
+
+header .appNameContainer {
+    margin-top: -5px;
+}
+
+header .appName {
+    background-image: url("../images/app-name.png");
+    width: 390px;
+    height: 30px;
+    margin-top: 15px;
+}
+
+header .appEnName {
+    font-size: 11px;
+    letter-spacing: 1px;
+    background: #D2171E;
+}
+
+header .separator {
+    border-left: 1px solid #fff;
+    height: 50px;
+    margin: 0 15px 0 15px;
+}
+
+header .userContainer {
+    margin: 0 15px 0 15px;
+    color: #999;
+}
+
+header .datetime {
+    margin-top: -5px;
+}
+
+header .time {
+    font-size: 30px;
+}
+
+header .date {
+    font-size: 14px;
+    font-weight: 800;
+}
+
+header .fullScreenButton {
+    width: 40px;
+    height: 40px;
+    top: 50%;
+    background-color: #395366;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+header .fullScreenButton:hover {
+    background-color: #697386;
+}
+
+header .fullScreenIcon{
+    width: 100%;
+    height: 100%;
+}
+
+header .fullScreenIcon.fullscreen {
+    background-image: url("../images/exit-fullscreen.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+header .fullScreenIcon.exitFullscreen {
+    background-image: url("../images/fullscreen.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    height: 30px;
+    line-height: 30px;
+    background: #1c1c1c;
+    color: #676767;
+    font-size: 14px;
+    border-top: 1px solid #666;
+}
+
+.main {
+    width: 100%;
+    height: calc(100% - 110px);
+    position: relative;
+    background: #000;
+}

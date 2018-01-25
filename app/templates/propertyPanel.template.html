@@ -1,0 +1,160 @@
+<div class="propertyPanel-header clearfix">
+    <a class="back left" ng-click="backHandle()"></a>
+    <a class="image left">
+        <img ng-src="{{detailInfo.icon}}">
+    </a>
+    <div class="description left">
+        <div class="title">{{detailInfo.name}}</div>
+        <span class="subTitle">类型：{{detailInfo.type}}</span>
+    </div>
+</div>
+<div class="propertyPanel-content clearfix" ng-show="!isShowMax">
+    <div class="propertyPanel-imageText">
+        <div class="image">
+            <div id="model3d-container-detail" ng-show="!is2DMode"></div>
+            <img id="detail-image-detail" ng-src="{{detailInfo.image}}" ng-show="is2DMode"/>
+
+            <div class="switch-button-container" ng-if="hasBoth2D3D">
+                <span class="switch-button left" ng-click="switchTo2D()"
+                      ng-class="{true: 'select'}[is2DMode]">2D</span>
+                <span class="switch-button left" ng-click="switchTo3D()"
+                      ng-class="{false: 'select'}[is2DMode]">3D</span>
+            </div>
+        </div>
+        <div class="text">
+            <div class="multi-text-header">
+                <span class="multi-header left">产品介绍</span>
+                <span class="splitLine"></span>
+            </div>
+            <div class="text-content">{{detailInfo.desc}}</div>
+        </div>
+    </div>
+    <div class="propertyPanel-charts">
+        <div class="topoContainer">
+            <a class="tip left"></a>
+            <span class="header left">关联拓扑</span>
+            <span class="viewTopoButton right" ng-click="clickTopoHandle()">查看拓扑</span>
+        </div>
+        <div class="chartContainer">
+            <div class="chartPanel">
+                <div class="chart">
+                    <div class="text-header">
+                        <a class="tip left"></a>
+                        <span class="header left">饼图</span>
+                        <a class="max right" ng-show="!isShowMax" ng-click="maxHandle('pie')"></a>
+                        <a class="min right" ng-show="isShowMax" ng-click="minHandle('pie')"></a>
+                    </div>
+                    <div class="chart-content" id="pieContainer"></div>
+                </div>
+            </div>
+            <div class="chartPanel">
+                <div class="chart">
+                    <div class="text-header">
+                        <a class="tip left"></a>
+                        <span class="header left">线图</span>
+                        <a class="max right" ng-show="!isShowMax" ng-click="maxHandle('line')"></a>
+                        <a class="min right" ng-show="isShowMax" ng-click="minHandle('line')"></a>
+                    </div>
+                    <div class="chart-content" id="lineContainer"></div>
+                </div>
+            </div>
+            <div class="chartPanel">
+                <div class="chart">
+                    <div class="text-header">
+                        <a class="tip left"></a>
+                        <span class="header left">柱图</span>
+                        <a class="max right" ng-show="!isShowMax" ng-click="maxHandle('bar')"></a>
+                        <a class="min right" ng-show="isShowMax" ng-click="minHandle('bar')"></a>
+                    </div>
+                    <div class="chart-content" id="barContainer"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="propertyPanel-detail">
+        <div class="text-header">
+            <a class="tip left"></a>
+            <span class="header left">相关机构</span>
+        </div>
+        <div class="detail-content">
+
+            <!-- 视频 -->
+            <div ng-if="showVideosPanel">
+                <div class="property-header" expander>
+                    <span>视频列表</span>
+                    <a tab-tip open="true"></a>
+                </div>
+                <ul class="list">
+                    <li class="list-item" ng-repeat="video in detailInfo.videos">
+                        <a class="list-item-text" ng-href="video" ng-bind="video"></a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- 音频 -->
+            <div ng-if="showAudiosPanel">
+                <div class="property-header" expander>
+                    <span>音频列表</span>
+                    <a tab-tip open="true"></a>
+                </div>
+                <ul class="list">
+                    <li class="list-item" ng-repeat="audio in detailInfo.audios">
+                        <a class="list-item-text" ng-href="audio" ng-bind="audio"></a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- 文件 -->
+            <div ng-if="showFilesPanel">
+                <div class="property-header" expander>
+                    <span>文件列表</span>
+                    <a tab-tip open="true"></a>
+                </div>
+                <ul class="list">
+                    <li class="list-item" ng-repeat="file in detailInfo.files">
+                        <a class="list-item-text" ng-href="file" ng-bind="file"></a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- 列表 -->
+            <ul>
+                <li ng-repeat="listMember in detailInfo.listMembers">
+                    <div class="property-header" expander>
+                        <span ng-bind="listMember.name"></span>
+                        <a tab-tip open="true"></a>
+                    </div>
+                    <div kendo-tree-view
+                         k-data-source="{{listMember.items}}" class="list">
+                        <span k-template class="list-item-text" ng-class="{interactive: dataItem.data.interactive}"
+                              ng-click="interactive(dataItem.data)">{{dataItem.data.value}}</span>
+                    </div>
+                </li>
+            </ul>
+
+            <!-- 表格 -->
+            <ul>
+                <li ng-repeat="tableMember in detailInfo.tableMembers">
+                    <div class="property-header" expander>
+                        <span>{{tableMember.name}}</span>
+                        <a tab-tip open="true"></a>
+                    </div>
+                    <table class="property-table">
+                        <thead>
+                        <tr>
+                            <th ng-repeat="column in tableMember.columns">{{column}}</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr ng-repeat="row in tableMember.rows">
+                            <td ng-repeat="cell in row.cells">{{cell.value}}</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="propertyPanel-maxContainer" ng-show="isShowMax"></div>

@@ -1,0 +1,19 @@
+<ul>
+    <li ng-repeat="battle in battles" class="battleBar">
+        <div class="battle-item" ng-click="selectBattle(battle)" ng-class="selectClass(battle)">
+            <img class="battle-icon-container left" src="images/battle-icon.png"/>
+
+            <div class="battle-info-container left">
+                <div class="battle-name" ng-bind="battle.name"></div>
+                <div class="battle-time">{{battle.time}}</div>
+                <div class="battle-time" ng-bind="battle.id">{{battle.id}}</div>
+            </div>
+            
+        </div>
+
+        <div class="popBar">
+            <div ng-repeat="chi in battle.child" class="childBar"><input  type="checkbox" name="sta"/>{{chi.name}}</div>  
+        </div>
+    </li>
+</ul>
+<div class="edit-button" ng-click="onEditBattle()">战场编辑</div>

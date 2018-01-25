@@ -1,0 +1,129 @@
+<div class="header" ng-if="detailInfo">
+    <div class="logo left">
+        <span class="helper"></span>
+        <img ng-src="{{detailInfo.icon}}"/>
+    </div>
+    <div class="description left">
+        <div>{{detailInfo.name}}</div>
+        <span>类型：{{detailInfo.type}}</span>
+    </div>
+    <span class="detailLink right" ng-click="$ctrl.detailLinkHandle()">
+        属性
+    </span>
+</div>
+<div class="scroll-viewer">
+    <div class="image-border">
+        <div id="model3d-container" ng-show="!is2DMode"></div>
+        <img id="detail-image" ng-src="{{detailInfo.image}}" ng-show="is2DMode"/>
+
+        <div class="switch-button-container" ng-if="hasBoth2D3D">
+            <span class="switch-button left" ng-click="switchTo2D()" ng-class="{true: 'select'}[is2DMode]">2D</span>
+            <span class="switch-button left" ng-click="switchTo3D()" ng-class="{false: 'select'}[is2DMode]">3D</span>
+        </div>
+    </div>
+
+    <div class="property-header">
+        <span>关联拓扑</span>
+        <span class="viewTopoButton right">查看拓扑</span>
+    </div>
+
+    <div class="chart">
+        <div class="property-header">
+            <span>饼图</span>
+        </div>
+        <div class="chart-content" id="small-pieContainer"></div>
+    </div>
+    <div class="chart">
+        <div class="property-header">
+            <span>线图</span>
+            <span class="viewTopoButton right" ng-click="$ctrl.clickLineHandle()">查看线图</span>
+        </div>
+        <div class="chart-content" id="small-lineContainer"></div>
+    </div>
+    <div class="chart" ng-if="showBarChart">
+        <div class="property-header">
+            <span>柱图</span>
+        </div>
+        <div class="chart-content" id="small-barContainer"></div>
+    </div>
+
+    <!-- 视频 -->
+    <div ng-if="showVideosPanel">
+        <div class="property-header" expander>
+            <span>视频列表</span>
+            <a tab-tip open="true"></a>
+        </div>
+        <ul class="list">
+            <li class="list-item" ng-repeat="video in detailInfo.videos">
+                <span class="list-item-text interactive" ng-bind="video" ng-click="interactiveMedia(video)"></span>
+            </li>
+        </ul>
+    </div>
+
+    <!-- 音频 -->
+    <div ng-if="showAudiosPanel">
+        <div class="property-header" expander>
+            <span>音频列表</span>
+            <a tab-tip open="true"></a>
+        </div>
+        <ul class="list">
+            <li class="list-item" ng-repeat="audio in detailInfo.audios">
+                <span class="list-item-text interactive" ng-bind="audio" ng-click="interactiveMedia(audio)"></span>
+            </li>
+        </ul>
+    </div>
+
+    <!-- 文件 -->
+    <div ng-if="showFilesPanel">
+        <div class="property-header" expander>
+            <span>文件列表</span>
+            <a tab-tip open="true"></a>
+        </div>
+        <ul class="list">
+            <li class="list-item" ng-repeat="file in detailInfo.files">
+                <span class="list-item-text interactive" ng-bind="file" ng-click="interactiveMedia(file)"></span>
+            </li>
+        </ul>
+    </div>
+
+    <!-- 列表 -->
+    <ul>
+        <li ng-repeat="listMember in detailInfo.listMembers">
+            <div class="property-header" expander>
+                <span ng-bind="listMember.name"></span>
+                <a tab-tip open="true"></a>
+            </div>
+            <div kendo-tree-view
+                 k-data-source="{{listMember.items}}" class="list">
+                <span k-template class="list-item-text" ng-class="{interactive: dataItem.data.interactive}"
+                      ng-click="interactive(dataItem.data)">{{dataItem.data.value}}</span>
+            </div>
+        </li>
+    </ul>
+
+    <!-- 表格 -->
+    <ul>
+        <li ng-repeat="tableMember in detailInfo.tableMembers">
+            <div class="property-header" expander>
+                <span>{{tableMember.name}}</span>
+                <a tab-tip open="true"></a>
+            </div>
+            <table class="property-table">
+                <thead>
+                <tr>
+                    <th ng-repeat="column in tableMember.columns">{{column}}</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr ng-repeat="row in tableMember.rows">
+                    <td ng-repeat="cell in row.cells" ng-class="{interactive: cell.interactive}"
+                        ng-click="interactive(cell)">{{cell.value}}
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </li>
+    </ul>
+</div>
+<a class="detailPanelControl" ng-click="$ctrl.panelControlHandle()">
+</a>

@@ -1,0 +1,82 @@
+.managePanel {
+    width: 305px;
+    height: calc(100% - 110px);
+    position: absolute;
+    top: 80px;
+    left: 0;
+    background: rgba(27, 33, 35, 0.9);
+    border-right: 1px solid #666;
+    color: #FFF;
+}
+
+.manage-header {
+    height: 65px;
+    padding: 15px 10px;
+    border-bottom: 1px solid #666;
+}
+
+.manage-tab {
+    width: 85px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    font-size: 16px;
+    background: url(../images/line-bule.png) center center repeat-x;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.manage-tab:last-child {
+    margin-right: 0px;
+}
+
+.manage-tab.select {
+    color: #333;
+    background: url(../images/line-yellow.png) center center repeat-x;
+}
+
+.manage-tab.unselect {
+    color: #fff;
+    background: url(../images/line-bule.png) center center repeat-x;
+}
+
+.manage-tab:hover {
+    background: url(../images/line-yellow.png) center center repeat-x;
+}
+
+/*.manage-tab:first-child {*/
+/*margin-right: 10px;*/
+/*}*/
+
+.manage-content {
+    height: calc(100% - 65px);
+    position: relative;
+}
+
+.hidden{
+    visibility: hidden;
+}
+
+.visible{
+    visibility: visible;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.manage-module {
+    height: 100%;
+    width: 100%;
+}
+
+.managePanelControl {
+    position: absolute;
+    right: -20px;
+    width: 20px;
+    height: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 1px solid #666;
+    background: rgba(0, 0, 0, 0.6) url(../images/left.png) center center no-repeat;
+    cursor: pointer;
+}

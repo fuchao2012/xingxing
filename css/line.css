@@ -1,0 +1,93 @@
+@import "jquery-ui.min.css";
+
+.linePanel {
+    display: none;
+}
+
+.lineContainer {
+    height: 100%;
+    width: 100%;
+}
+
+.ui-dialog {
+    border: 1px solid rgba(91, 96, 98, 0.9);
+    border-radius: 0;
+    background: rgba(21, 21, 21, 0.9);
+    padding: 0;
+}
+
+.ui-dialog .ui-dialog-titlebar {
+    border-radius: 0;
+    border: 0;
+    background: rgba(33, 36, 37, 0.9);
+    color: #FFF;
+    height: 35px;
+    box-shadow: 1px 1px 10px #000;
+}
+
+.ui-dialog .ui-dialog-titlebar-close {
+    position: absolute;
+    background: #004860;
+    width: 20px;
+    height: 20px;
+    right: 10px;
+    border: 0px;
+    border-radius: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+.ui-dialog .ui-dialog-titlebar-close .ui-icon {
+    background: url(../images/dialog_close.png) center center no-repeat;
+    width: 20px;
+    height: 20px;
+    display: block;
+    margin: 0;
+    top: 0;
+    left: 0;
+}
+
+.ui-dialog .ui-dialog-title {
+    border-left: 4px solid #D7181F;
+    font-size: 16px;
+    font-family: 微软雅黑;
+    font-weight: lighter;
+    overflow: visible;
+    height: 14px;
+    margin-top: 5px;
+    padding-left: 10px;
+    line-height: 12px;
+}
+
+.ui-dialog .ui-dialog-content {
+    width: 100% !important;
+    border: 0px;
+    border-radius: 0;
+    outline: none;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+/*
+
+.lineContainer {
+    height: calc(100% - 50px);
+}
+
+.line-header {
+    height: 30px;
+    border-bottom: 5px solid rgba(0, 0, 0, 0.3);
+}
+
+.line-header .tip {
+    display: block;
+    width: 7px;
+    height: 18px;
+    background: #D2171E;
+    margin-top: 3px;
+    margin-right: 5px;
+}
+
+#lineContainer {
+    height: calc(100% - 30px);
+}*/

@@ -1,0 +1,40 @@
+<div class="timeAxis">
+    <ul class="clearfix">
+        <li class="prev">
+            <a class="a prevButton" ng-show="prevShow" ng-click="prevButtonMouseUp()"></a>
+            <a class="a prevunButton" ng-show="!prevShow"></a>
+        </li>
+        <li class="play">
+            <a class="a playButton" ng-show="playShow" ng-click="playButtonMouseUp()"></a>
+            <a class="a pauseButton" ng-show="!playShow" ng-click="pauseButtonMouseUp()"></a>
+        </li>
+        <li class="stop">
+            <a class="a stopButton" ng-show="stopShow" ng-click="stopButtonMouseUp()"></a>
+            <a class="a stopunButton" ng-show="!stopShow"></a>
+        </li>
+        <li class="next">
+            <a class="a nextButton" ng-show="nextShow" ng-click="nextButtonMouseUp()"></a>
+            <a class="a nextunButton" ng-show="!nextShow"></a>
+        </li>
+        <li class="time">
+            <div class="timeLine">
+                <div class="BaseLine"></div>
+                <div class="showLine" ng-style="showLineStyle"></div>
+            </div>
+        </li>
+        <li class="slow">
+            <a class="a slowButton" ng-click="slowButtonMouseUp()"></a>
+        </li>
+        <li class="speed">
+            <div class="speedSelect">
+                <select class="select" ng-change="speedSelectChange()" ng-model="speed"
+                        ng-options="value for value in speedList"></select>
+                <span class="selectButton"></span>
+            </div>
+
+        </li>
+        <li class="fast">
+            <a class="a fastButton" ng-click="fastButtonMouseUp()"></a>
+        </li>
+    </ul>
+</div>

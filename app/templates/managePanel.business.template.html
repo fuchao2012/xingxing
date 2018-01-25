@@ -1,0 +1,12 @@
+<!-- 业务展示 -->
+<div id="businessPresentationBlock">
+    <div class="treeControlPanel clearfix">
+        <span class="imageButton left" ng-repeat="business in businessList"
+              ng-click="onTabButtonClick($event, business)" ng-class="::{select: business.isDefault}"
+              tag="{{business}}">
+            {{business.name}}库
+        </span>
+    </div>
+
+    <div id="treeViewPanel"></div>
+</div>

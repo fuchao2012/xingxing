@@ -1,0 +1,28 @@
+[
+  {
+    "name" : "全球卫星",
+    "type" : "注:只有公开卫星",
+    "id" : "mapsta",
+    "child":[
+       {"name":"业余卫星","id":"amateur"},
+       {"name":"通信卫星","id":"communication"},
+       {"name":"地球同步卫星","id":"geosynchronous"},
+       {"name":"全球星卫星","id":"globalstar"},
+       {"name":"铱卫星","id":"iridium"},
+       {"name":"导航卫星","id":"navigation"},
+       {"name":"ORBCOMM卫星","id":"orbcomm"},
+       {"name":"空间站","id":"stations"},
+       {"name":"气象卫星","id":"weather"},
+       {"name":"可见卫星","id":"visible"},
+       {"name":"国际通信卫星","id":"intelsat"},
+       {"name":"国际海事卫星","id":"inmarsat"},
+       {"name":"风云1碎片","id":"fy1"},
+       {"name":"宇宙碎片","id":"cosmos"}
+    ]
+  },
+  {
+    "name" : "伊拉克战场",
+    "type" : "时间:2007/05/09 12:01:06",
+    "id" : "ylk"
+  }
+]

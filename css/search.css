@@ -1,0 +1,224 @@
+.manage-searchField {
+    padding: 15px 0px 10px 15px;
+    font-size: 14px;
+    color: #DDD;
+}
+
+.manage-searchField .key {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.manage-searchField .searchInputContainer {
+    width: 200px;
+    height: 30px;
+    border: 1px solid #000;
+}
+
+.manage-searchField .searchInput {
+    width: 100%;
+    height: 100%;
+    padding-left: 5px;
+    border-left: 1px solid #323639;
+    border-right: 1px solid #323639;
+    background: url(../images/line-search.png) center center repeat-x;
+    color: #FFF;
+    /* backgrounmd: #292a2c;
+     background: -webkit-gradient(linear, 0 top, 0 bottom, from(#616767), to(#232426));
+     background: -moz-linear-gradient(top, #616767, #232426);
+     background: -o-linear-gradient(top, #616767, #232426);
+     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#777777, endColorstr=#232426, GradientType=0);*/
+}
+
+.manage-searchField .searchHandle {
+    width: 75px;
+    height: 30px;
+    line-height: 28px;
+    text-align: center;
+    border-top: 1px solid #73c1ce;
+    border-right: 1px solid #12465e;
+    border-bottom: 1px solid #0c3e57;
+    border-left: 1px solid #5e96b1;
+    margin-left: 5px;
+    cursor: pointer;
+    background: #216a8d;
+    background: -webkit-gradient(linear, 0 top, 0 bottom, from(#2b769d), to(#125476));
+    background: -moz-linear-gradient(top, #2b769d, #125476);
+    background: -o-linear-gradient(top, #2b769d, #125476);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#2b769d, endColorstr=#125476, GradientType=0);
+}
+
+.manage-searchField .searchHandle:hover {
+    background: #3180a8;
+}
+
+.manage-searchField .checkContainer {
+    margin-top: 10px;
+}
+
+.manage-searchField .checkBox {
+    position: relative;
+    float: left;
+    height: 20px;
+    line-height: 20px;
+    margin-right: 10px;
+}
+
+.manage-searchField .checkBox:nth-child(5n) {
+    margin-right: 0;
+}
+
+.manage-searchField .searchControl {
+    text-align: right;
+    margin-top: 5px;
+}
+
+.manage-searchField .searchControl > span {
+    margin-right: 15px;
+    font-size: 14px;
+    color: #2693FF;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.searchListContainer {
+    height: calc(100% - 123px);
+    overflow-y: auto;
+}
+
+.manage-searchList .manage-searchList-header {
+    height: 45px;
+    line-height: 45px;
+    padding-left: 15px;
+    font-size: 14px;
+    color: #DDD;
+    border-top: 1px solid #8a8c8b;
+    margin-right: 1px;
+    cursor: pointer;
+    background: #4c5051;
+    background: -webkit-gradient(linear, 0 top, 0 bottom, from(#616566), to(#4c5051));
+    background: -moz-linear-gradient(top, #616566, #4c5051);
+    background: -o-linear-gradient(top, #616566, #4c5051);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#616566, endColorstr=#4c5051, GradientType=0);
+}
+
+.manage-searchList .item {
+    height: 65px;
+    border-top: 1px solid #626463;
+    margin-top: 1px;
+    background: rgba(60, 60, 60, 0.5);
+    padding: 10px 10px 15px 15px;
+    cursor: pointer;
+}
+
+.manage-searchList .item:hover {
+    border-top: 1px solid #45acbf;
+    background: #1e6486;
+    background: -webkit-gradient(linear, 0 top, 0 bottom, from(#3487a0), to(#115375));
+    background: -moz-linear-gradient(top, #3487a0, #115375);
+    background: -o-linear-gradient(top, #3487a0, #115375);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#3487a0, endColorstr=#115375, GradientType=0);
+}
+
+.manage-searchList .image {
+    width: 35px;
+    height: 35px;
+    border: 1px solid #9d9d9d;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-right: 10px;
+    background: -webkit-gradient(linear, 0 top, 0 bottom, from(#262a2d), to(#444547));
+}
+
+.manage-searchList .image > img {
+    margin: 0 auto;
+    display: block;
+    margin-top: 7px;
+    height: 20px;
+}
+
+.manage-searchList .header {
+    display: block;
+    font-size: 16px;
+}
+
+.manage-searchList .text {
+    font-size: 12px;
+}
+
+.manage-searchList .text:nth-child(2n-1) {
+    margin-right: 65px;
+}
+
+.manage-searchList .text:nth-child(2n) {
+    margin-right: 20px;
+}
+
+.searchDetail {
+    margin-top: 10px;
+}
+
+.searchDetail .item {
+    height: 28px;
+    margin-bottom: 10px;
+}
+
+.searchDetail .header {
+    width: 50px;
+    height: 28px;
+    line-height: 28px;
+}
+
+.searchDetail .select {
+    width: 230px;
+    height: 28px;
+    line-height: 28px;
+}
+
+.searchDetail .selectItem {
+    width: 100%;
+    height: 25px;
+    background: #FFF;
+    color: #000;
+    padding-left: 5px;
+}
+
+.searchDetail .selectItem:hover {
+    background: #00BFFF;
+}
+
+.searchDetail .continentSelect {
+    padding: 10px;
+}
+
+.searchDetail .continentItem {
+    margin-bottom: 5px;
+}
+
+.searchDetail .selectCheckBox {
+    position: relative;
+    float: left;
+    height: 25px;
+}
+
+.searchDetail .selectOpen {
+    width: 9px;
+    height: 9px;
+    position: relative;
+    margin-top: 8px;
+    margin-right: 5px;
+}
+
+.searchDetail .countryItem {
+    height: 25px;
+    line-height: 25px;
+}
+
+.searchDetail .countrySelect {
+    margin-left: 20px;
+}
+
+.searchDetail .text {
+    height: 25px;
+    line-height: 25px;
+}

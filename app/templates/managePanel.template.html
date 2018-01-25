@@ -1,0 +1,10 @@
+<div class="manage-header">
+    <span class="manage-tab left" ng-repeat="module in modules" ng-click="tab($event, module)" ng-model="module"
+          ng-bind="module.name" ng-class="{true: 'select', false: 'unselect'}[module.selected]"></span>
+</div>
+<div class="manage-content">
+    <search-panel class="manage-module" ng-class="{true: 'visible', false: 'hidden'}[modules[0].selected]"></search-panel>
+    <business-panel class="manage-module" ng-class="{true: 'visible', false: 'hidden'}[modules[1].selected]"></business-panel>
+    <battle-field class="manage-module" ng-class="{true: 'visible', false: 'hidden'}[modules[2].selected]"></battle-field>
+</div>
+<a class="managePanelControl" ng-click="$ctrl.panelControlHandle()"></a>

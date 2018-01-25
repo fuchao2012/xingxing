@@ -1,0 +1,639 @@
+{
+	"name" : "某某某某某某产品",
+	"type" : "国防科研机构=高等院校",
+	"desc" : "高科技武器，是指采用了现代高科技的常规武器装备，它的作战效能与同类常规武器相比，高科技武器不同于一些利用推进燃料快速燃烧后产生的高压气体推进发射物的射击武器，比如枪支、炮弹等。自主武器从理论上讲，作战机器人要么通过接受操作员的指令去消灭敌人，要么完全独立自主地行动。专家们称，欲将完全能够独立行动的战争机器人用于战场，最重要的问题就是要让“他们”分清敌我。在机器人技术发展条件下，自主机器人用于实际作战还有困难：他们很可能会将民用拖拉机当成敌军坦克、将一头母牛当成敌军狙击手去进行攻击。另外，机器人还有一个致命的弱点，那就是他们的无线电通讯系统。敌军完全能够通过介入作战机器人的指挥网来让这些机器人为自己服务。激光这种被称为“死亡之光”光线一旦用于战争，其杀伤力便能够遍及遥远的大气层甚至太空。然而，激光也有它的致命的弱点，那就是作战激光需要消耗大量的能源，而且在雨天或大雾天中它便一无是处。超速飞机拥有高超音速行进速度的飞机能够在1至2小时内抵达地球上的任何一点。这种飞机甚至还可以将卫星运送至近地轨道。如今科学技术的发展水平已经克服了原来制造此类飞机所遇到的种种困难。",
+	"image" : "./test/detail-image.jpg",
+	"model3D" : "./test/models/satellite/stss.gltf",
+	"pie" : {
+		"legends" : [
+			"机构",
+			"产品",
+			"技术"
+		],
+		"values" : [
+			10,
+			20,
+			30
+		]
+	},
+	"line" : {
+		"legends" : [
+			"机构",
+			"产品",
+			"技术"
+		],
+		"items" : [{
+				"dimension" : "一月",
+				"values" : [
+					10,
+					20,
+					30
+				]
+			}, {
+				"dimension" : "二月",
+				"values" : [
+					50,
+					10,
+					10
+				]
+			}, {
+				"dimension" : "三月",
+				"values" : [
+					20,
+					10,
+					50
+				]
+			}, {
+				"dimension" : "四月",
+				"values" : [
+					30,
+					40,
+					10
+				]
+			}
+		]
+	},
+	"bar" : {
+		"legends" : [
+			"机构",
+			"产品",
+			"技术"
+		],
+		"items" : [{
+				"dimension" : "一月",
+				"values" : [
+					10,
+					20,
+					30
+				]
+			}, {
+				"dimension" : "二月",
+				"values" : [
+					50,
+					10,
+					10
+				]
+			}, {
+				"dimension" : "三月",
+				"values" : [
+					20,
+					10,
+					50
+				]
+			}, {
+				"dimension" : "四月",
+				"values" : [
+					30,
+					40,
+					10
+				]
+			}
+		]
+	},
+	"videos" : [
+		"http://www.youku.com/index/001",
+		"http://www.youku.com/index/002",
+		"http://www.youku.com/index/003",
+		"http://www.youku.com/index/004",
+		"http://www.youku.com/index/005"
+	],
+	"audios" : [
+		"http://www.xiami.com/index/001",
+		"http://www.xiami.com/index/002",
+		"http://www.xiami.com/index/003",
+		"http://www.xiami.com/index/004",
+		"http://www.xiami.com/index/005"
+	],
+	"files" : [
+		"http://www.baidu.com/index/001",
+		"http://www.baidu.com/index/002",
+		"http://www.baidu.com/index/003",
+		"http://www.baidu.com/index/004",
+		"http://www.baidu.com/index/005"
+	],
+	"listMembers" : [{
+			"name" : "列表001",
+			"items" : [{
+					"value" : "列表项001",
+					"interactive" : true,
+					"items" : [{
+							"value" : "列表项011",
+							"interactive" : false,
+							"items" : []
+						}, {
+							"value" : "列表项012",
+							"interactive" : false,
+							"items" : [{
+									"value" : "列表项111",
+									"interactive" : false
+								}, {
+									"value" : "列表项112",
+									"interactive" : false
+								}, {
+									"value" : "列表项113",
+									"interactive" : false
+								}
+							]
+						}, {
+							"value" : "列表项013",
+							"interactive" : false,
+							"items" : []
+						}
+					]
+				}, {
+					"value" : "列表项002",
+					"interactive" : false
+				}, {
+					"value" : "列表项003",
+					"interactive" : false
+				}, {
+					"value" : "列表项004",
+					"interactive" : false
+				}, {
+					"value" : "列表项005",
+					"interactive" : false
+				}, {
+					"value" : "列表项006",
+					"interactive" : false
+				}, {
+					"value" : "列表项007",
+					"interactive" : false
+				}, {
+					"value" : "列表项008",
+					"interactive" : false
+				}
+			]
+		}, {
+			"name" : "列表002",
+			"items" : [{
+					"value" : "列表项001",
+					"interactive" : false
+				}, {
+					"value" : "列表项002",
+					"interactive" : false
+				}, {
+					"value" : "列表项003",
+					"interactive" : false
+				}, {
+					"value" : "列表项004",
+					"interactive" : false
+				}, {
+					"value" : "列表项005",
+					"interactive" : false
+				}, {
+					"value" : "列表项006",
+					"interactive" : false
+				}, {
+					"value" : "列表项007",
+					"interactive" : false
+				}, {
+					"value" : "列表项008",
+					"interactive" : false
+				}
+			]
+		}, {
+			"name" : "列表003",
+			"items" : [{
+					"value" : "列表项001",
+					"interactive" : false
+				}, {
+					"value" : "列表项002",
+					"interactive" : false
+				}, {
+					"value" : "列表项003",
+					"interactive" : false
+				}, {
+					"value" : "列表项004",
+					"interactive" : false
+				}, {
+					"value" : "列表项005",
+					"interactive" : false
+				}, {
+					"value" : "列表项006",
+					"interactive" : false
+				}, {
+					"value" : "列表项007",
+					"interactive" : false
+				}, {
+					"value" : "列表项008",
+					"interactive" : false
+				}
+			]
+		}
+	],
+	"tableMembers" : [{
+			"name" : "属性概览",
+			"columns" : [
+				"类型",
+				"值"
+			],
+			"rows" : [{
+					"cells" : [{
+							"value" : "类型",
+							"interactive" : false
+						}, {
+							"value" : "航天",
+							"interactive" : false
+						}
+					]
+				}, {
+					"cells" : [{
+							"value" : "装备类型",
+							"interactive" : false
+						}, {
+							"value" : "导弹",
+							"interactive" : false
+						}
+					]
+				}, {
+					"cells" : [{
+							"value" : "二级分类",
+							"interactive" : false
+						}, {
+							"value" : "弹道导弹",
+							"interactive" : false
+						}
+					]
+				}, {
+					"cells" : [{
+							"value" : "基本参数001",
+							"interactive" : false
+						}, {
+							"value" : "数值001",
+							"interactive" : true
+						}
+					]
+				}, {
+					"cells" : [{
+							"value" : "基本参数002",
+							"interactive" : false
+						}, {
+							"value" : "数值002",
+							"interactive" : false
+						}
+					]
+				}, {
+					"cells" : [{
+							"value" : "基本参数003",
+							"interactive" : false
+						}, {
+							"value" : "数值003",
+							"interactive" : false
+						}
+					]
+				}, {
+					"cells" : [{
+							"value" : "基本参数004",
+							"interactive" : false
+						}, {
+							"value" : "数值004",
+							"interactive" : false
+						}
+					]
+				}, {
+					"cells" : [{
+							"value" : "基本参数005",
+							"interactive" : false
+						}, {
+							"value" : "数值005",
+							"interactive" : false
+						}
+					]
+				}, {
+					"cells" : [{
+							"value" : "基本参数006",
+							"interactive" : false
+						}, {
+							"value" : "数值006",
+							"interactive" : false
+						}
+					]
+				}, {
+					"cells" : [{
+							"value" : "基本参数007",
+							"interactive" : false
+						}, {
+							"value" : "数值007",
+							"interactive" : false
+						}
+					]
+				}
+			]
+		}, {
+			"name" : "相关机构",
+			"columns" : [
+				"机构名称",
+				"机构类型",
+				"关系"
+			],
+			"rows" : [{
+					"cells" : [{
+							"value" : "机构名称001",
+							"interactive" : false
+						}, {
+							"value" : "机构类型001",
+							"interactive" : false
+						}, {
+							"value" : "协同研制",
+							"interactive" : false
+						}
+					]
+				}, {
+					"cells" : [{
+							"value" : "机构名称002",
+							"interactive" : false
+						}, {
+							"value" : "机构类型002",
+							"interactive" : false
+						}, {
+							"value" : "协同研制",
+							"interactive" : false
+						}
+					]
+				}, {
+					"cells" : [{
+							"value" : "机构名称003",
+							"interactive" : false
+						}, {
+							"value" : "机构类型003",
+							"interactive" : false
+						}, {
+							"value" : "协同研制",
+							"interactive" : false
+						}
+					]
+				}, {
+					"cells" : [{
+							"value" : "机构名称004",
+							"interactive" : false
+						}, {
+							"value" : "机构类型004",
+							"interactive" : false
+						}, {
+							"value" : "协同研制",
+							"interactive" : false
+						}
+					]
+				}, {
+					"cells" : [{
+							"value" : "机构名称005",
+							"interactive" : false
+						}, {
+							"value" : "机构类型005",
+							"interactive" : false
+						}, {
+							"value" : "协同研制",
+							"interactive" : false
+						}
+					]
+				}, {
+					"cells" : [{
+							"value" : "机构名称006",
+							"interactive" : false
+						}, {
+							"value" : "机构类型006",
+							"interactive" : false
+						}, {
+							"value" : "协同研制",
+							"interactive" : false
+						}
+					]
+				}, {
+					"cells" : [{
+							"value" : "机构名称007",
+							"interactive" : false
+						}, {
+							"value" : "机构类型007",
+							"interactive" : false
+						}, {
+							"value" : "协同研制",
+							"interactive" : false
+						}
+					]
+				}, {
+					"cells" : [{
+							"value" : "机构名称008",
+							"interactive" : false
+						}, {
+							"value" : "机构类型008",
+							"interactive" : false
+						}, {
+							"value" : "协同研制",
+							"interactive" : false
+						}
+					]
+				}
+			]
+		}, {
+			"name" : "相关科技",
+			"columns" : [
+				"科技名称",
+				"科技类型",
+				"关系"
+			],
+			"rows" : [{
+					"cells" : [{
+							"value" : "科技名称001",
+							"interactive" : false
+						}, {
+							"value" : "科技类型001",
+							"interactive" : false
+						}, {
+							"value" : "协同研制",
+							"interactive" : false
+						}
+					]
+				}, {
+					"cells" : [{
+							"value" : "科技名称002",
+							"interactive" : false
+						}, {
+							"value" : "科技类型002",
+							"interactive" : false
+						}, {
+							"value" : "协同研制",
+							"interactive" : false
+						}
+					]
+				}, {
+					"cells" : [{
+							"value" : "科技名称003",
+							"interactive" : false
+						}, {
+							"value" : "科技类型003",
+							"interactive" : false
+						}, {
+							"value" : "协同研制",
+							"interactive" : false
+						}
+					]
+				}, {
+					"cells" : [{
+							"value" : "科技名称004",
+							"interactive" : false
+						}, {
+							"value" : "科技类型004",
+							"interactive" : false
+						}, {
+							"value" : "协同研制",
+							"interactive" : false
+						}
+					]
+				}, {
+					"cells" : [{
+							"value" : "科技名称005",
+							"interactive" : false
+						}, {
+							"value" : "科技类型005",
+							"interactive" : false
+						}, {
+							"value" : "协同研制",
+							"interactive" : false
+						}
+					]
+				}, {
+					"cells" : [{
+							"value" : "科技名称006",
+							"interactive" : false
+						}, {
+							"value" : "科技类型006",
+							"interactive" : false
+						}, {
+							"value" : "协同研制",
+							"interactive" : false
+						}
+					]
+				}, {
+					"cells" : [{
+							"value" : "科技名称007",
+							"interactive" : false
+						}, {
+							"value" : "科技类型007",
+							"interactive" : false
+						}, {
+							"value" : "协同研制",
+							"interactive" : false
+						}
+					]
+				}, {
+					"cells" : [{
+							"value" : "科技名称008",
+							"interactive" : false
+						}, {
+							"value" : "科技类型008",
+							"interactive" : false
+						}, {
+							"value" : "协同研制",
+							"interactive" : false
+						}
+					]
+				}
+			]
+		}, {
+			"name" : "相关产品",
+			"columns" : [
+				"产品名称",
+				"产品类型",
+				"关系"
+			],
+			"rows" : [{
+					"cells" : [{
+							"value" : "产品名称001",
+							"interactive" : false
+						}, {
+							"value" : "产品类型001",
+							"interactive" : false
+						}, {
+							"value" : "协同研制",
+							"interactive" : false
+						}
+					]
+				}, {
+					"cells" : [{
+							"value" : "产品名称002",
+							"interactive" : false
+						}, {
+							"value" : "产品类型002",
+							"interactive" : false
+						}, {
+							"value" : "协同研制",
+							"interactive" : false
+						}
+					]
+				}, {
+					"cells" : [{
+							"value" : "产品名称003",
+							"interactive" : false
+						}, {
+							"value" : "产品类型003",
+							"interactive" : false
+						}, {
+							"value" : "协同研制",
+							"interactive" : false
+						}
+					]
+				}, {
+					"cells" : [{
+							"value" : "产品名称004",
+							"interactive" : false
+						}, {
+							"value" : "产品类型004",
+							"interactive" : false
+						}, {
+							"value" : "协同研制",
+							"interactive" : false
+						}
+					]
+				}, {
+					"cells" : [{
+							"value" : "产品名称005",
+							"interactive" : false
+						}, {
+							"value" : "产品类型005",
+							"interactive" : false
+						}, {
+							"value" : "协同研制",
+							"interactive" : false
+						}
+					]
+				}, {
+					"cells" : [{
+							"value" : "产品名称006",
+							"interactive" : false
+						}, {
+							"value" : "产品类型006",
+							"interactive" : false
+						}, {
+							"value" : "协同研制",
+							"interactive" : false
+						}
+					]
+				}, {
+					"cells" : [{
+							"value" : "产品名称007",
+							"interactive" : false
+						}, {
+							"value" : "产品类型007",
+							"interactive" : false
+						}, {
+							"value" : "协同研制",
+							"interactive" : false
+						}
+					]
+				}, {
+					"cells" : [{
+							"value" : "产品名称008",
+							"interactive" : false
+						}, {
+							"value" : "产品类型008",
+							"interactive" : false
+						}, {
+							"value" : "协同研制",
+							"interactive" : false
+						}
+					]
+				}
+			]
+		}
+	]
+}
